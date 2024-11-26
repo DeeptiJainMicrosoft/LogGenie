@@ -7,6 +7,7 @@ Simplifies the analysis of Azure Monitor diagnostic logs stored in Azure Storage
 Reduces troubleshooting time and collaboration overhead across Azure teams.
 
 **Unique Scenarios:**
+
 Handles cases where log analytics tables are unavailable, providing an essential alternative for analyzing such logs archived to storage accounts.
 
 **Key Features:**
@@ -18,7 +19,7 @@ Handles cases where log analytics tables are unavailable, providing an essential
   Reads logs directly from Azure Blob Storage in JSON format without additional costs or management complexity.
   
   **Supports All Azure Services:**
-  Works for logs from services like Core, Developer, and App Service, especially when log analytics tables are unavailable.
+  Works for logs from services like Azure Core (VM, Networking), Developer, and App Service, especially when log analytics tables are unavailable.
   
   **Customizable Configuration:**
   Flexible setup allows reading logs by simply adding log container names in the XML file.
