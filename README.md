@@ -3,14 +3,16 @@ A standalone windows application which helps in reading Azure Monitor logs for a
 
 **Purpose:**
 
-Simplifies the analysis of Azure Monitor diagnostic logs stored in Azure Storage Accounts.
-Reduces troubleshooting time and collaboration overhead across Azure teams.
+* Simplifies the analysis of Azure Monitor diagnostic logs stored in Azure Storage Accounts.
+* Organize the log containers based on Azure services.
+* Include the resource name alongside the log file name.
+* Reduces troubleshooting time and collaboration overhead across Azure teams.
 
-**Unique Scenarios:**
+**_Unique Scenarios:_**
 
 Handles cases where log analytics tables are unavailable, providing an essential alternative for analyzing such logs archived to storage accounts.
 
-**Key Features:**
+###**Key Features:**
 
   **Standalone Application:**
   Windows-based, .NET-powered tool for log analysis.
@@ -24,7 +26,7 @@ Handles cases where log analytics tables are unavailable, providing an essential
   **Customizable Configuration:**
   Flexible setup allows reading logs by simply adding log container names in the XML file.
 
-**Benefits:**
+###**Benefits:**
 
   **Faster Log Analysis:**
   Offers lightweight, immediate, ad-hoc analysis of archived logs.
@@ -34,3 +36,8 @@ Handles cases where log analytics tables are unavailable, providing an essential
   
   **Enhanced Troubleshooting:**
   Speeds up resolving issues by bypassing dependencies on storage team for log analysis.
+
+```Ensure that key-based access is enabled for the storage account```
+
+Containers were specified based on [Azure Monitoring resource logs](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-logs/microsoft-cache-redis-logs)
+
