@@ -29,4 +29,5 @@ Handles cases where log analytics tables are unavailable, providing an essential
 
 Containers were specified based on [Azure Monitoring resource logs](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-logs/microsoft-cache-redis-logs)
 
-![Log Genie Demo](https://github.com/DeeptiJainMicrosoft/LogGenie/edit/main/LogGenie.gif)
+
+![Log Genie Demo](https://github.com/DeeptiJainMicrosoft/LogGenie/blob/main/LogGenie.gif)
