@@ -24,6 +24,7 @@ A standalone windows application which helps in reading Azure Monitor logs for a
 **Known Limitations:**
 * Ensure that key-based access is enabled for the storage account.
 * Enforcing different network restrictions on the storage account can impact connectivity.
+* Application may fail to read very large log files (greater than 10 MB).
 
 **The detailed step-by-step guide for using LogGenie is available at [Step-By-Step guide](https://github.com/DeeptiJainMicrosoft/LogGenie/blob/main/Step-By-Step%20guide.md), with a demo provided below for your reference.**
 **     **
