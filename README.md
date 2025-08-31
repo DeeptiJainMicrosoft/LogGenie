@@ -8,15 +8,12 @@ A standalone windows application which helps in reading Azure Monitor logs for a
 * Include the resource name alongside the log file name.
 * Reduces troubleshooting time and collaboration overhead across Azure teams.
 
-**_Unique Scenarios:_**
-
-Handles cases where log analytics tables are unavailable, providing an essential alternative for analyzing such logs archived to storage accounts.
-
 **Key Features:**
 
+* Alternative to Log Analytics: Analyze logs directly from Azure Storage when Log Analytics tables are not available.
 * Standalone Application: Windows-based, .NET-powered tool for log analysis.
 * Direct Access to Logs: Reads logs directly from Azure Blob Storage in JSON format without additional costs or management complexity.
-* Supports All Azure Services: Works for logs from services like Azure Core (VM, Networking), Developer, and App Service, especially when log analytics tables are unavailable.
+* Supports All Azure Services: Works for logs from services like Azure Core (VM, Networking), Azure Storage, and App Service, especially when log analytics tables are unavailable.
 * Customizable Configuration: Flexible setup allows reading logs by simply adding log container names in the XML file.
 
 **Benefits:**
@@ -24,10 +21,12 @@ Handles cases where log analytics tables are unavailable, providing an essential
 * Cost-Efficient: Avoids additional expenses by directly accessing storage logs.
 * Enhanced Troubleshooting: Speeds up resolving issues by bypassing dependencies on storage team for log analysis.
 
+**Known Limitations:**
+* Ensure that key-based access is enabled for the storage account.
+* Enforcing different network restrictions on the storage account can impact connectivity.
 
-```Ensure that key-based access is enabled for the storage account```
-
-Containers were specified based on [Azure Monitoring resource logs](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-logs/microsoft-cache-redis-logs)
-
-
+**The detailed step-by-step guide for using LogGenie is available at [Step-By-Step guide](https://github.com/DeeptiJainMicrosoft/LogGenie/blob/main/Step-By-Step%20guide.md), with a demo provided below for your reference.**
+**     **
 ![Log Genie Demo](https://github.com/DeeptiJainMicrosoft/LogGenie/blob/main/LogGenie.gif)
+
+**_Note:_** _To read Azure Monitor classic log files, you can leverage https://github.com/nunogabrielmonteiro/AzureStorageLogReader_
