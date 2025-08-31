@@ -1,6 +1,5 @@
 ## Follow the steps below to get started with LogGenie.
 
-
 1. Download the Release.zip from [LogGenie GitHub Repository](https://github.com/DeeptiJainMicrosoft/LogGenie)
 2. Extract the zip and run "**LogGenie.exe**" from the Release folder.
 3. Click on **+** sign before Log Sink in left panel.
@@ -10,7 +9,7 @@
         Make sure that Access Key authentication is enabled on your storage account.
         
 6. Once connected, expand the **+** sign. You will see your storage account name with a tree view of all Azure services ingesting logs into that account.
-7. Each azure service will show a list of containers created by Azure Monitor to store logs.
+7. Each Azure service will show a list of containers created by Azure Monitor to store logs.
 8. To add a log file, right-click on a container and select "**Add Log file**".
 9. A pop-up will appear prompting for the path of the log file. Copy the log file path from your storage account and paste it into the text box.
 
@@ -35,7 +34,8 @@
 **If you don’t see logs for a specific service, it means the configuration is missing in the XML file.**
   
 - You can find the container mappings for Azure services in the **LogContainersList.xml** file under the Debug and Release folders.
-- To check a full list of Azure service log categories, refer to [Azure Monitor Supported Logs](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-logs/microsoft-cache-redis-logs)
+- Storage account containers are specified based on the corresponding Azure service log categories
+- For the complete list of Azure service log categories, refer to [Azure Monitor Supported Logs](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/supported-logs/microsoft-cache-redis-logs)
 
 
 **Please follow the steps below to add a New Service Log Category:**
